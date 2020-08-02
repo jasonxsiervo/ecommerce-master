@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -398,7 +398,7 @@ var Item = function Item(props) {
 
 /***/ }),
 
-/***/ 8:
+/***/ 5:
 /*!*****************************!*\
   !*** multi ./pages/item.js ***!
   \*****************************/
