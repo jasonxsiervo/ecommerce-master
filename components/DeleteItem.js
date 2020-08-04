@@ -28,7 +28,7 @@ class Deleteitem extends Component {
                 variables={{ id: this.props.id }} 
                 update={this.update}
             >
-                {(deleteItem, { error }) => (
+                {(deleteItem, { error, loading }) => (
                     <button onClick={() => {
                         if(confirm('Are you sure you want to delete this?')) {
                             deleteItem().catch(err => {
@@ -36,7 +36,7 @@ class Deleteitem extends Component {
                             });
                         }
                     }}>
-                        {this.props.children}
+                        Delet{loading ? 'ing': 'e'} 🗑
                     </button>
                 )}
                 

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -295,8 +295,6 @@ function (_Component) {
   _createClass(Deleteitem, [{
     key: "render",
     value: function render() {
-      var _this2 = this;
-
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_1__["Mutation"], {
         mutation: DELETE_ITEM_MUTATION,
         variables: {
@@ -309,7 +307,8 @@ function (_Component) {
         },
         __self: this
       }, function (deleteItem, _ref) {
-        var error = _ref.error;
+        var error = _ref.error,
+            loading = _ref.loading;
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
           onClick: function onClick() {
             if (confirm('Are you sure you want to delete this?')) {
@@ -323,7 +322,7 @@ function (_Component) {
             lineNumber: 32
           },
           __self: this
-        }, _this2.props.children);
+        }, "Delet", loading ? 'ing' : 'e', " \uD83D\uDDD1");
       });
     }
   }]);
@@ -493,7 +492,7 @@ function (_Component) {
           lineNumber: 43
         },
         __self: this
-      }, "Delete \uD83D\uDDD1")));
+      })));
     }
   }]);
 
@@ -1068,7 +1067,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 5:
+/***/ 6:
 /*!******************************!*\
   !*** multi ./pages/items.js ***!
   \******************************/
