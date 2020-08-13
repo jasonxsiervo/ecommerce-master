@@ -20,7 +20,12 @@
 // - cannot test the functionality of a component
 
 // Mounting
-// - 
+// - will run in a browswer environment
+// - will show the real span, classnames, etc.
+
+// Snap-shot Testing
+// alerts you when something changes in your components
+// has the capability to be used when checking for changes like git version control
 
 describe('sample test 101', () => {
     it('works as expected', () => {
